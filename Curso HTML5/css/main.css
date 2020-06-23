@@ -1,0 +1,480 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+
+
+:root {
+  --main-white-color: #fff;
+  --main-black-color: black;
+  --main-grey-color:#f2f2f2f2;
+  --main-green-color: #98DFC6;
+  --main-blue-color: #128ef2;
+  --main-gold-color:#ffcc00;
+  --main-red-color:#cc0000;
+  --main-redb-color:#CE7F7B;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font: 16px/1.5 "metal mania", sans-serif;
+  /*IE FIX*/
+  /*display: flex;
+  flex-direction: column;*/
+}
+
+header h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 3em;
+    font-weight: 600;
+}
+h3.under{
+  text-decoration: underline;
+
+}
+main{
+  background-color: var(--main-black-color);
+  color: var(--main-gold-color)
+}
+.center {
+  margin: 10px auto;
+  display: block;
+  text-align: center;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgb(249,166,2);
+  transition: 0.3s;
+  margin: 0 2,5em;
+  color: var(--main-gold-color);
+}
+.card-img-top{
+  width: 50%;
+  height: 48vh;
+  object-fit: cover;
+  box-shadow: 0 4px 8px 0 rgb(249,166,2);
+  transition: 0.3s;
+  margin: 0 2,5em;
+  color: var(--main-gold-color);
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+/* CONTAINER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.wrapper {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+.wrapper > * {
+  padding: 10px 40px;
+}
+
+
+/* HEADER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-header {
+  background: var(--main-black-color);
+
+}
+.page-header nav {
+  text-transform: uppercase;			
+  display: -webkit-box;
+  display: flex;
+  font-size: 0.9em;
+  color:var(--main-gold-color);
+  
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.page-header ul {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-ordinal-group: 2;
+          order: 1;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.page-header ul li:not(:last-child) {
+  padding-right: 302px;
+}
+
+.page-header .bt-acceso {
+  font-family: FontFaceObserver("inherit");
+  font-size: 0.9rem;
+  padding: 12px 20px;
+  border-radius: 9px;
+  text-transform: uppercase;
+  color: var(--main-white-color);
+  background: var(--main-blue-color);
+  outline: none;
+  cursor: pointer;
+
+}
+#logo {
+    height: 100px;
+}
+
+
+/* Jumbo
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-jumbo {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+          flex-grow: 1;
+  min-height: 550px;
+  background: 
+    url("/images/12690-world-of-warcraft-13th-anniversary-art-contest-winners-min.jpg") no-repeat
+    center / cover;
+  color: var(--main-gold-color);
+  text-shadow: 2.2px 2.2px var(--main-black-color);
+  background-color: var(--main-black-color);
+}
+.page-jumbo div {
+  max-width: 500px;
+}
+
+.page-jumbo h1 {
+  margin-bottom: 20px;
+}
+
+.page-jumbo p + p {
+  margin-top: 10px;
+}
+
+/* Ally
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-ally {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+          flex-grow: 1;
+  min-height: 400px;
+  background: 
+    url("/images/alianza1-min.jpg") no-repeat
+    center / cover;
+  color: var(--main-blue-color);
+  background-color: var(--main-black-color);
+}
+.containera{
+  color:var(--main-white-color);
+}
+.card-ally {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 var(--main-blue-color);
+  transition: 0.3s;
+  margin: 0 2,5em;
+  color: var(--main-white-color);
+  text-shadow:1px 1px var(--main-blue-color);
+  background-size: cover;
+}
+.img-container{
+  text-align: center;
+  display: block;
+}
+
+/* Horde
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-horde {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+          flex-grow: 1;
+  min-height: 400px;
+  background: 
+    url("/images/horde-min.jpg") no-repeat
+    center / cover;
+  color: var(--main-blue-color);
+  background-color: var(--main-black-color);
+}
+.containerh{
+  color:var(--main-white-color);
+}
+.card-horde {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 var(--main-red-color);
+  transition: 0.3s;
+  margin: 0 2,5em;
+  color: var(--main-white-color);
+  text-shadow:1px 1px var(--main-red-color);
+  background-size: cover;
+}
+.img-container{
+  text-align: center;
+  display: block;
+}
+/* Classguide
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-classguide {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+          justify-content: center;
+  -webkit-box-flex: 1;
+          flex-grow: 1;
+  min-height: 650px;
+  background: 
+    url("/images/Guia\ de\ clases.jpg") no-repeat
+    center / cover;
+  color: var(--main-gold-color);
+  text-shadow: 2.2px 2.2px var(--main-black-color);
+  background-color: var(--main-black-color);
+  
+}
+/* Guide
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-guide {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+          justify-content: center;
+  -webkit-box-flex: 1;
+          flex-grow: 1;
+  min-height: 650px;
+  background: 
+    url("/images/wow\ guide.jpg") no-repeat
+    center / cover;
+  color: var(--main-gold-color);
+  text-shadow: 2.2px 2.2px var(--main-black-color);
+  background-color: var(--main-black-color);
+  
+}
+.container{
+  color:var(--main-gold-color)
+}
+.card-classguide{
+  box-shadow: 0 4px 8px 0 var(--main-gold-color);
+  transition: 0.3s;
+  margin: 0 2,5em;
+  color: var(--main-white-color);
+  text-shadow:1px 1px var(--main-black-color);
+  background-size: cover;
+}
+/* ASIDE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-aside {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+          flex-grow: 1;
+  min-height: 400px;
+  background: 
+    url("/images/WoW_Classic_Wallpaper_Silithus.jpg") no-repeat
+    center / cover;
+  background-blend-mode: luminosity;
+  color: var(--main-gold-color);
+}
+/* ASIDE ALLY
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-asideally {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content:flex-start;
+  -webkit-box-flex: 1;
+          flex-grow: 1;
+  min-height: 600px;
+  background: 
+    url("/images/alliance2.jpg") no-repeat
+    center / cover;
+  background-blend-mode: luminosity;
+  color: #17328b;
+  font-size: 1.5em;
+  text-shadow:2px 2px #ca923a;
+  
+}
+/* ASIDE HORDE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-asidehorde {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content:flex-start;
+  -webkit-box-flex: 1;
+          flex-grow: 1;
+  min-height: 600px;
+  background: 
+    url("/images/Horde.jpg") no-repeat
+    center / cover;
+  background-blend-mode: luminosity;
+  color: #9f0904;
+  font-size: 1.5em;
+  text-shadow: 2px 2px var(--main-black-color);
+  
+}
+/* FOOTER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-footer {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+          flex-direction: column-reverse;
+  background: var(--main-black-color);
+  color: var(--main-gold-color);
+  justify-content: center;
+}
+.page-footer a{
+  color: var(--main-redb-color);
+}
+.page-footer a:hover {
+  color: #8f8f8f;
+}
+
+.page-footer ul {
+  display: -webkit-box;
+  display: flex;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.page-footer ul li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.page-footer-container {
+  font-weight: 300;
+  width: 50%;
+  padding: 2em 0;
+}
+
+.page-footer-container p {
+  font-size: 0.8em;
+}
+.page-footer-container i {
+  font-size: 1.5em;
+  padding: 0.8em 0.1em;
+}
+.page-footer-container i:hover {
+  color: var(--main-green-color);
+  
+}
+
+/* MQ
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media screen and (min-width: 550px) {
+  .page-header ul {
+    width: auto;
+    margin-top: 0;
+  }
+
+  .page-header .bt-acceso {
+    -webkit-box-ordinal-group: 2;
+            order: 1;
+  }
+
+  .page-footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+  }
+
+  .page-footer ul {
+    margin-bottom: 0;
+  }
+}
+
+/* Flexbox */
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    align-items: center;
+  }
+
+
+  img{
+      max-width: 540px;
+  }
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+
+  .page-jumbo {
+    padding-left: 90px;
+  }
+
+  .column {
+    width: 100%;
+  }
+}
