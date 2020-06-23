@@ -1,2 +1,0 @@
-# wowclassic
-wow classic guide
